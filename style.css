@@ -10,12 +10,13 @@
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: #333;
-    background-color: #f8f8f8;
+    color: #474646;
+    background-color: #ffffff;
+    /* background-color: #f8f8f8; */
   }
   
   a {
-    color: #333;
+    color: #474646;
     text-decoration: none;
   }
   
@@ -27,11 +28,7 @@
     font-weight: normal;
     line-height: 1.2;
   }
-  .intro {
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px;
-  }
+  
   
   .profile-pic {
     width: 400px;
@@ -42,40 +39,83 @@
     margin-right: 20px;
   }
   
-  .intro h2{
-    margin-left: 100px;
+  .intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
+  
+  .intro img {
+    margin-right: 20px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .intro-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
   .intro h1 {
-    margin-left: 100px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 50px;
     font-weight: bold;
+    margin: 0;
   }
   
-  header {
-    background-color: #FFC0CB;
-    color: #fff;
-    padding: 30px;
-    text-align: right;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: right;
-  }
-  
-  nav li {
-    margin-right: 20px;
-  }
-  
-  nav a {
+  .intro p {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  header {
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background-color: #e6b4b4;
+    height: 80px;
+  }
+  
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .logo img {
+    width: 100px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 30px;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
   }
   
 
+  nav a {
+    text-decoration: none;
+    color: #474646;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 20px;
+  }
   
+  nav ul li a:hover {
+    border-bottom: 2px solid #333;
+  }
   
   .btn {
     display: inline-block;
@@ -83,7 +123,7 @@
     padding: 10px 20px;
     border-radius: 5px;
     background-color: #fff;
-    color: #0066cc;
+    color: #f0a2a9;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
@@ -96,18 +136,18 @@
   }
   
   main {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 40px 20px;
   }
   
   section {
-    margin-bottom: 60px;
+    margin: 80px;
   }
   
   section h2 {
     font-size: 36px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   
   ul {
@@ -166,13 +206,51 @@
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: none;
     margin-bottom: 20px;
     font-size: 16px;
+    background-color:#fae8e8;
   }
   
   textarea {
     height: 150px;
+  }
+  .icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('logo-no-background.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 5px;
+  }
+  
+  .icon-github {
+    background-image: url('path/to/github-icon.png');
+  }
+  
+  .icon-linkedin {
+    background-image: url('path/to/linkedin-icon.png');
+  }
+  
+  .icon-email {
+    background-image: url('path/to/email-icon.png');
+  }
+  
+  .styled-button {
+    background-color: #8c8c8c; /* Green background color */
+    border: none; /* Remove default border */
+    color: white; /* Text color */
+    padding: 12px 24px; /* Padding to increase button size */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensure button is not full-width */
+    font-size: 16px; /* Font size */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* Add shadow */
+  }
+  
+  .styled-button:hover {
+    background-color: #3e8e41; /* Darker green background color on hover */
   }
   
   
