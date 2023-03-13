@@ -208,7 +208,7 @@
     border-radius: 5px;
     margin-bottom: 20px;
     font-size: 16px;
-    background-color:#fae8e8;
+    background-color:#f8f9fa;
   }
   
   textarea {
@@ -225,11 +225,16 @@
   }
   
   .icon-github {
-    background-image: url('path/to/github-icon.png');
+    background-image: url('git_logo.png');
+    width: 60px;
+    height: 40px;
   }
   
   .icon-linkedin {
-    background-image: url('path/to/linkedin-icon.png');
+    background-image: url('linkedin_logo.png');
+    width: 60px;
+    height: 40px;
+    border-radius: 10%;
   }
   
   .icon-email {
@@ -237,7 +242,7 @@
   }
   
   .styled-button {
-    background-color: #8c8c8c; /* Green background color */
+    background-color:#4b4b4b ; /* Green background color */
     border: none; /* Remove default border */
     color: white; /* Text color */
     padding: 12px 24px; /* Padding to increase button size */
@@ -250,7 +255,39 @@
   }
   
   .styled-button:hover {
-    background-color: #3e8e41; /* Darker green background color on hover */
+    background-color: #101010; /* Darker green background color on hover */
   }
+  footer {
+    background-color:#feefef ;
+    padding: 20px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .col {
+    flex-basis: calc(25% - 50px);
+    margin-bottom: 5px;
+  }
+  
+  .col:last-child {
+    margin-right: 0;
+  }
+  
+  
+  hr {
+    border: none;
+    border-top: 1px solid #dee2e6;
+    margin-top: 20px;
+  }
+  
   
   
