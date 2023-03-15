@@ -14,8 +14,8 @@
 				
 			  </div>
 			  <nav>
-				
-				  <a href="#resume" onclick="scrollToResume()">Resume</a></li>
+				<a href="#aboutMe">About me</a></li>
+				  <a href="#resume">Resume</a></li>
 				  <a href="#projects">Projects</a></li>
 				  <a href="#contact">Contact</a></li>
 				
@@ -25,9 +25,15 @@
 		<main>
 			<div class="intro">
 				<img src="profile_pic.jpg" class="profile-pic" alt="Profile Picture">
-
+				<p>
+				  <span class="name">Sharareh Keshavarzi</span>
+				  <span class="title">Software Engineer</span>
+				</p>
+			  </div>
+			<section id="AboutMe">
+				<h2>About Me</h2>
 				<p>I'm <b>Sharareh Keshavarzi</b>, an experienced <b>software engineer</b> with expertise in Java, Kotlin, and JavaScript. I specialize in creating high-quality software solutions for a range of platforms, including mobile, web-based, and software systems. My portfolio showcases my innovative approach to solving complex problems, and my commitment to delivering work that exceeds expectations. I'm always looking for new challenges and opportunities to collaborate with others. Explore my portfolio to learn more about my work and get in touch to discuss potential projects.</p>
-			</div>
+			</section>
 	
 			<section id="resume">
 				<h2>Resume</h2>
@@ -104,9 +110,9 @@
 				<h2>My Projects</h2>
 				<ul>
 					<li>
-						<a href="[Link to Project 1]" target="_blank">
-							<img src="[Image for Project 1]" alt="[Title of Project 1]">
-							<h3>[Title of Project 1]</h3>
+						<a href="https://github.com/sriramveeraghanta/risk-game" target="_blank">
+							<img src="project1.jpg" alt="Risk Game">
+							<h3>Risk Game </h3>
 						</a>
 					</li>
 					<li>
@@ -121,7 +127,8 @@
 	
 			<section id="contact">
 				<h2>Contact Me</h2>
-				<form method="post" action="/send">
+				<!-- <form method="post" action="/send"> -->
+				<form method="post">
 				  <label for="name">Name:</label>
 				  <input type="text" id="name" name="name" required>
 				  <label for="email">Email:</label>
