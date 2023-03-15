@@ -15,7 +15,7 @@
 			  </div>
 			  <nav>
 				
-				  <a href="#resume">Resume</a></li>
+				  <a href="#resume" onclick="scrollToResume()">Resume</a></li>
 				  <a href="#projects">Projects</a></li>
 				  <a href="#contact">Contact</a></li>
 				
@@ -31,8 +31,74 @@
 	
 			<section id="resume">
 				<h2>Resume</h2>
+				<div class="resume-section">
+					<h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+					<div class="job">
+						<h4>Software Engineer</h4>
+						<p class="job-meta">Dolembreux Solutions Réseau - QC, Canada | January 2019 - Present</p>
+						<ul class="job-description">
+						  <p>• Learned and adapted quickly to new technology and software applications.</p>
+						  <p>• Designed, implemented, tested, maintained, refactored code, and updated documentation.</p>
+						  <p>• Skilled in developing software solutions across multiple platforms including Windows, mobile, and web-based applications, with expertise in both front-end and back-end development.</p>
+						</ul>
+					  </div>
+					  <div class="job">
+						<h4>Volunteer</h4>
+						<p class="job-meta">Collision Conference -Toronto, Canada | June 2022</p>
+						<ul class="job-description">
+						  <p>• Supported engaging and smooth-running events by helping with organization and planning.</p>
+						  <p>• Used strong interpersonal communication skills to convey information to others.</p>
+						</ul>
+					  </div>
+					  <div class="job">
+						<h4>Programmer</h4>
+						<p class="job-meta">Amel System Company - Shiraz, Iran | June 2016 - July 2018</p>
+						<ul class="job-description">
+						  <p>• Utilized Visual Basic to maintain and enhance a financial software system by implementing new features and ensuring its continued functionality.</p>
+						  <p>• Enhanced software performance by optimizing SQL queries with Microsoft SQL Server, resulting in significantly improved query speed.</p>
+						  <p>• Created and updated comprehensive reports and documentation with attention to detail.</p>
+						</ul>
+					  </div>
+				</div>
+				<div class="resume-section">
+					<h3><i class="fas fa-graduation-cap"></i> Education</h3>
+					<div class="education">
+						<h4>Master of Software Engineering (GPA 3.8)</h4>
+						<p class="education-meta">Concordia University -  QC | 2019-2021</p>
+						<p class="education-description">• Relevant Coursework :  Big data analytics ,Software design methodologies, Software Project Management</p>
+						<p class="education-description">• Member of Golden Key International Honor Society(granted membership based on being at the top 15% of the university program)</p>
+					</div>
+					<div class="education">
+						<h4>BSc: Information Technology Engineering</h4>
+						<p class="education-meta">Shiraz University of Technology - Iran| 2011-2015</p>
+						<p class="education-description">• Relevant Coursework :  Algorithms and data structure ,Operating system ,Networks ,Database Management System</p>
+					</div>
+				</div>
+				<div class="resume-section">
+					<h3><i class="fas fa-laptop-code"></i> Skills</h3>
+					<ul class="skills-list">
+						<li>Java</li>
+						<li>C#</li>
+						<li>HTML5</li>
+						<li>Node.js</li>
+						<li>Spark</li>
+						<li>Visual Basic</li>
+						<li>CSS3</li>
+						<li>React.js</li>
+						<li>Git</li>
+						<li>Python</li>
+						<li>Bootstrap</li>
+						<li>PostgreSQL</li>							<li>Jira</li>
+						<li>Kotlin</li>
+						<li>JavaScript</li>
+						<li>Microsoft SQL Server</li>
+					</ul>
+					<a href="CV_ShararehKeshavarzi.pdf" download="ShararehKeshavarzi_Resume.pdf">
+						<button type="submit" class="styled-button">Download my resume</button>
+					  </a>
+				</div>
 				
-			</section>
+			  </section>
 	
 			<section id="projects">
 				<h2>My Projects</h2>
@@ -55,48 +121,48 @@
 	
 			<section id="contact">
 				<h2>Contact Me</h2>
-				<form method="post">
-					<label for="name">Name:</label>
-					<input type="text" id="name" name="name" required>
-					<label for="email">Email:</label>
-					<input type="email" id="email" name="email" required>
-					<label for="message">Message:</label>
-					<textarea id="message" name="message" required></textarea>
-					<button type="submit" class="styled-button">Send Message</button>
+				<form method="post" action="/send">
+				  <label for="name">Name:</label>
+				  <input type="text" id="name" name="name" required>
+				  <label for="email">Email:</label>
+				  <input type="email" id="email" name="email" required>
+				  <label for="message">Message:</label>
+				  <textarea id="message" name="message" required></textarea>
+				  <button type="submit" class="styled-button">Send Message</button>
 				</form>
-			</section>
+			  </section>
+			  
 		</main>
-	
-		<footer>
+
+		  
+		  <footer>
 			<div class="container">
 			  <div class="row">
-				<div class="col">
-				  <ul>
-					<li><a href="https://github.com/ShararehK"><span class="icon icon-github"></span></a></li>
-				  </ul>
+				<div class="col-md-4">
+				  <p>&copy; 2023 Sharareh Keshavarzi. All rights reserved.</p>
 				</div>
-				<div class="col">
-				  <ul>
-					<li><a href="https://www.linkedin.com/in/sharareh-keshavarzi-8921b319b/"><span class="icon icon-linkedin"></span></a></li>
-				  </ul>
-				</div>
-				<div class="col">
-				  <ul>
-					<li><p>keshavarzisharareh@gmail.com</p></li>
-				  </ul>
-				</div>
-				<div class="col">
-				  <ul>
-					<li><p>&copy; 2023 Sharareh Keshavarzi. All rights reserved.</p></li>
+				<div class="col-md-4">
+					<p>keshavarzisharareh@gmail.com</p>
+				  </div>
+				<div class="col-md-4 text-md-end">
+				  <ul class="list-inline">
+					<li>
+						<a href="https://github.com/ShararehK">
+						  <span class="icon icon-github"></span>
+						</a>
+					  </li>
+					  <li>
+						<a href="https://www.linkedin.com/in/sharareh-keshavarzi-8921b319b/">
+						  <span class="icon icon-linkedin"></span>
+						</a>
+					  </li>
 				  </ul>
 				</div>
 			  </div>
 			</div>
-			<hr>
 		  </footer>
-		  
-		  
 	
 		<script src="app.js" defer></script>
+		
 	</body>
 	
