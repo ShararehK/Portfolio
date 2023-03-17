@@ -21,51 +21,65 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #f5f5f5;
+  color: #fdbdb0;
 }
 h1, h2, h3 {
   font-weight: normal;
   line-height: 1.2;
 }
-.profile-pic {
+/* .profile-pic {
   width: max-content;
   height: max-content;
   border-radius: 50%;
   object-fit: cover;
   float: left;
   margin-right: 20px;
-}
-.intro {
+} */
+
+
+/* .intro {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 30px;
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   /* adjust the image size for smaller screens */
-  .intro img {
-    max-width: 300px;
-  }
-}
-.intro .name,
+  /* .intro img { */
+    /* max-width: 300px; */
+  /* }
+} */
+/* .intro .name,
 .intro .title {
   display: inline;
   margin-right: 10px; /* add some spacing between the name and title */
-}
-.intro .title{
+/* } */
+/* .intro .title{
   font-family: Arial, Helvetica, sans-serif;
   font-size:40px ;
-}
-.intro .name{
+} */
+/* .intro .name{
   font-family: 'Times New Roman', Times, serif;
   font-size: 60px;
   font-style: italic;
   line-height: 1.5;
-}
-.intro p {
+} */
+/* .intro p {
   
   margin: 10px;
+}  */
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the height to the viewport height to make it full-screen */
 }
+
+.profile-pic {
+  width: 100vw; /* Make the image fill the entire width of the container */
+  height: auto; /* Maintain aspect ratio of the image */
+}
+
 header {
   /* background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); */
   background-color: #1c1c1c;
@@ -93,6 +107,7 @@ header {
   font-size: 1.5rem;
 }
 nav a {
+  transition: background-color 0.2s ease-out;
   text-decoration: none;
   color: #dcdcdc;
   font-size: 1.2rem;
@@ -100,7 +115,8 @@ nav a {
   margin-left: 20px;
 }
 nav ul li a:hover {
-  border-bottom: 2px solid #f5f5f5;
+  background-color: #fdfdfd;
+  border-bottom: 2px solid #2a2a2a;
 }
 .btn {
   display: inline-block;
@@ -115,8 +131,8 @@ nav ul li a:hover {
   transition: background-color 0.2s ease-out, color 0.2s ease-out;
 }
 .btn:hover {
-  background-color: #f5f5f5;
-  color: #121212;
+  background-color: #fdbdb0;
+  color: #2a2a2a;
 }
 main {
   max-width: 1000px;
@@ -124,9 +140,23 @@ main {
   padding: 40px 20px;
 }
 section {
+  
   margin: 80px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 section h2 {
+  color: #fdbdb0;
   font-size: 36px;
   margin-bottom: 50px;
 }
@@ -216,7 +246,7 @@ textarea {
   background-image: url('linkedin_logo.png');
   width: 60px;
   height: 40px;
-  border-radius: 10%;
+  border-radius: 20%;
 }
 
 .icon-email {
@@ -224,7 +254,7 @@ textarea {
 }
 
 .styled-button {
-  background-color: #fff;
+  background-color: #fdbdb0;
   /* Green background color */
   border: none;
   /* Remove default border */
@@ -247,9 +277,9 @@ textarea {
 }
 
 .styled-button:hover {
-  background-color: #2a2a2a;
+  background-color: #fdbdb0;
   /* Darker green background color on hover */
-  color: #fff;
+  color: #2a2a2a;
 }
 
 footer {
@@ -287,6 +317,8 @@ hr {
 .github-link,
 .linkedin-link {
   margin-bottom: 3px;
+  margin : 3px
+  
 }
 
 /* Style for the Resume section */
@@ -294,6 +326,7 @@ hr {
   background-color: #333;
   color: #fff;
   padding: 40px 30px;
+  margin-top: ;
 }
 
 
@@ -312,6 +345,7 @@ body {
 }
 
 .resume-section h3 {
+  margin-top: 20px;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -368,7 +402,7 @@ body {
 }
 
 .styled-button:hover {
-  background-color: #2a2a2a;
-  color: #fff;
-  border: 2px solid #fff;
+  background-color: #fdbdb0;
+  color: #2a2a2a;
+  border: 2px solid #2a2a2a;
 }
