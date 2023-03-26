@@ -15,6 +15,7 @@ body {
   line-height: 1.5;
   color: #dcdcdc;
   background-color: #121212;
+  cursor: url('click.png'), auto;
 }
 a {
   color: #dcdcdc;
@@ -78,6 +79,8 @@ h1, h2, h3 {
 .profile-pic {
   width: 100vw; /* Make the image fill the entire width of the container */
   height: auto; /* Maintain aspect ratio of the image */
+  mask-image: linear-gradient(to bottom, transparent 1%, black, transparent 99%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 1%, black, transparent 99%);
 }
 
 header {
@@ -85,15 +88,15 @@ header {
   background-color: #1c1c1c;
   padding: 20px;
 }
-.header-container {
+/* .header-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
-}
-.logo {
+} */
+/* .logo {
   display: flex;
   align-items: center;
 }
@@ -105,12 +108,12 @@ header {
 }
 .logo h1 {
   font-size: 1.5rem;
-}
+} */
 nav a {
   transition: background-color 0.2s ease-out;
   text-decoration: none;
   color: #dcdcdc;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   font-weight: bold;
   margin-left: 20px;
 }
@@ -137,7 +140,7 @@ nav ul li a:hover {
 main {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 40px 20px;
+  /* padding: 60px 20px 50px; */
 }
 section {
   
@@ -208,7 +211,7 @@ label {
   font-size: 18px;
 }
 
-input[type="text"],
+/* input[type="text"],
 input[type="email"],
 textarea {
   display: block;
@@ -224,7 +227,7 @@ textarea {
 
 textarea {
   height: 150px;
-}
+} */
 
 .icon {
   display: inline-block;
@@ -240,13 +243,14 @@ textarea {
   background-image: url('git_logo.png');
   width: 60px;
   height: 40px;
+  margin-top: 20px;
 }
 
 .icon-linkedin {
   background-image: url('linkedin_logo.png');
   width: 60px;
   height: 40px;
-  border-radius: 20%;
+  /* border-radius: 20%; */
 }
 
 .icon-email {
@@ -289,7 +293,7 @@ footer {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -326,7 +330,7 @@ hr {
   background-color: #333;
   color: #fff;
   padding: 40px 30px;
-  margin-top: ;
+  /* margin-top: ; */
 }
 
 
@@ -342,6 +346,7 @@ body {
   background-color: #2a2a2a;
   padding: 20px;
   border-radius: 10px;
+  
 }
 
 .resume-section h3 {
@@ -406,3 +411,90 @@ body {
   color: #2a2a2a;
   border: 2px solid #2a2a2a;
 }
+/* #projects {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+} */
+
+#projects h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+#projects ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#projects li {
+  margin: 20px;
+  width: 300px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#projects li a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+#projects li img {
+  width: 100%;
+  height: 250px;
+}
+
+#projects li h3 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+/* #contact {
+  background-color: #f4f4f4;
+  padding: 50px;
+  text-align: center;
+} */
+
+#contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#contact h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#contact span {
+  display: block;
+  margin-bottom: 30px;
+}
+
+#contact a {
+  display: inline-block;
+  font-size: 36px;
+  margin: 0 20px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+/* #contact a:hover {
+  color: #4078c0;
+} */
+
+/* #contact .icon-github:before {
+  content: "\f09b";
+}
+
+#contact .icon-linkedin:before {
+  content: "\f08c";
+} */
