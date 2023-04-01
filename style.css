@@ -125,7 +125,7 @@ nav ul li a:hover ,
 .links a :hover{
   text-decoration: none;
   border-bottom: 2px solid #2a2a2a;
-  color: #C7A1EB;
+  color: #9296F0;
   transform: translateY(-2px);
   transition: background-color 0.2s ease-out, color 0.2s ease-out;
 }
@@ -149,12 +149,18 @@ nav ul li a:hover ,
   position: relative;
   font-size: 30px;
   letter-spacing: 5px;
-  color: #C7A1EB;
+  color: #9296F0;
 }
-
+.title{
+  font-size: 4em;
+  color: transparent; /* Set the color of the text outline */
+  -webkit-text-stroke: 2px #9296F0; /* Add a 1-pixel black outline around the text */
+  font-weight: bold;
+}
 .name {
   display: inline-block;
-  font-size: 5em;
+  letter-spacing: 4px;
+  font-size: 7em;
   font-weight: 900;
   color: #fff;
   /* text-shadow: 3px 3px 3px #C7A1EB; */
@@ -167,7 +173,7 @@ nav ul li a:hover ,
   font-size: 8em;
   font-weight: bold;
   letter-spacing: 5px;
-  color: #C7A1EB;
+  color: #9296F0;
   opacity: 0;
   animation: fadeIn 0.5s ease-in forwards;
   
@@ -181,7 +187,7 @@ nav ul li a:hover ,
   height: 100vh;
   background: black;
   z-index: 200;
-  color: #C7A1EB;
+  color: #9296F0;
   line-height: 90vh;
   z-index: 100;
   opacity: 1;
@@ -222,14 +228,19 @@ nav ul li a:hover ,
   text-transform: capitalize;
   
 }
-.colored-p{
-  color: #C7A1EB;
+.colorful{
+  color: #9296F0;
+  
+}
+.rotate{
+  transform: rotate(180deg);
+  display: inline-block;
 }
 h1{
   display: block;
   font-size: 4em;
   font-weight: 900;
-  color: #C7A1EB;
+  color: #9296F0;
   /* transform: scaleY(2.5); */
 }
 h2{
@@ -248,12 +259,11 @@ h2{
 }
 button{
   font-weight: bold;
-  outline: none;
   border: none;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 400;
   color: #000;
-  background-color: #C7A1EB;
+  background-color: #9296F0;
   padding: 8px 14px;
   margin: 10px 5px;
   text-transform: capitalize;
@@ -262,7 +272,7 @@ button{
   border-radius: 10px;
 }
 button:hover{
-  background-color: #a9b4af;
+  background-color: #333;
 }
 .imagebox{
   position: relative;
@@ -326,11 +336,11 @@ section h1{
   display: block;
   font-size: 5em;
   font-weight: 900;
-  color: #C7A1EB;
+  color: #9296F0;
 }
 
 section h2 {
-  color: #C7A1EB;
+  color: #9296F0;
   font-size: 36px;
   margin-bottom: 50px;
 }
@@ -476,6 +486,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+  animation: slideRight 1s ease-in-out forwards;
 }
 
 .skills-list li {
@@ -489,6 +500,9 @@ body {
   font-size: 40px;
   margin-right: 10px;
   color: #fff;
+}
+.skills-list li i:hover {
+  background-color: #9296F0;
 }
 .styled-button {
   display: inline-block;
@@ -504,7 +518,7 @@ body {
 }
 
 .styled-button:hover {
-  background-color: #fdbdb0;
+  background-color: #9296F0;
   color: #2a2a2a;
   border: 2px solid #2a2a2a;
 }
@@ -562,10 +576,11 @@ body {
   transform: rotateY(180deg);
 }
 .outline-text {
-  font-size: 5em;
+  font-size: 4em;
   color: transparent; /* Set the color of the text outline */
   -webkit-text-stroke: 2px #fff; /* Add a 1-pixel black outline around the text */
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .timeline-section{
@@ -605,7 +620,7 @@ body {
 .timeline-dot{
 	height: 16px;
 	width: 16px;
-	background-color: #eaa023;
+	background-color: #9296F0;
 	position: absolute;
 	left: calc(50% - 8px);
 	border-radius: 50%;
@@ -613,7 +628,7 @@ body {
 }
 .timeline-date{
 	font-size: 18px;
-	color: #eaa023;
+	color: #9296F0;
 	margin:6px 0 15px;
 }
 .timeline-content{
