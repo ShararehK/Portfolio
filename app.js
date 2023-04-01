@@ -36,21 +36,4 @@ var typed = new Typed('.multiText', {
 
   // }
   // Get the timeline container element
-const timeline = document.getElementById("timeline");
 
-// Get all the event elements within the timeline container
-const events = timeline.querySelectorAll(".event");
-
-// Loop through each event element and add a click event listener
-events.forEach((event) => {
-  event.addEventListener("click", () => {
-    // When an event is clicked, toggle its active state
-    event.classList.toggle("active");
-
-    // Scroll the timeline container to the clicked event element
-    timeline.scrollTo({
-      top: event.offsetTop - timeline.offsetTop,
-      behavior: "smooth",
-    });
-  });
-});
