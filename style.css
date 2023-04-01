@@ -266,7 +266,7 @@ button:hover{
 }
 .imagebox{
   position: relative;
-  margin-left: 10px;
+  margin-left: 30px;
   width: 80%;
   height: 80%;
   
@@ -383,11 +383,7 @@ label {
 }
 
 #aboutMe{
-  display: flex;
-  justify-content: start;
-   align-items: start;
-   padding: 0 10%;
-   overflow: hidden;
+  
   font-size: 20px;
 }
 footer {
@@ -427,8 +423,6 @@ hr {
 /* Style for the Resume section */
 #resume {
   color: #fff;
-  padding: 40px 30px;
-  margin-top: ;
 }
 
 
@@ -455,17 +449,14 @@ body {
   color: #fff;
 }
 
-/* .skills-list li {
-  margin-bottom: 10px;
-  line-height: 1.4;
-}
 
-.skills-list h4 {
+
+/* .skills-list h4 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 5px;
   color: #fff;
-} */
+} */ */
 
 .resume-section p {
   font-size: 16px;
@@ -490,6 +481,8 @@ body {
 .skills-list li {
   display: inline-block;
   margin-right: 20px;
+  margin-bottom: 10px;
+  line-height: 1.4;
 }
 
 .skills-list li i {
@@ -577,7 +570,7 @@ body {
 
 .timeline-section{
 	min-height: 100vh;
-	padding: 100px 15px;
+	/* padding: 100px 15px; */
 }
 .timeline-items{
 	max-width: 1000px;
