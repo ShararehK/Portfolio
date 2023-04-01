@@ -41,7 +41,7 @@ header {
 
 .header-container {
   width: 100%;
-  min-height: 100vm;
+  min-height: 20%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -288,7 +288,7 @@ button:hover{
   height: 100%; /* Maintain aspect ratio of the image */
   /* mask-image: linear-gradient(to bottom, transparent 1%, black, transparent 99%);
   -webkit-mask-image: linear-gradient(to bottom, transparent 1%, black, transparent 99%); */
-  /* border-radius: 10%; */
+  border-radius: 10%;
   opacity: 0;
   transform: translateX(50%);
   /* box-shadow: 5px 5px 5px #C7A1EB; */
@@ -296,7 +296,6 @@ button:hover{
   
   
 }
-
 
 .h1, h2, h4 {
   margin-bottom: 20px;
@@ -466,7 +465,7 @@ body {
   font-weight: bold;
   margin-bottom: 5px;
   color: #fff;
-} */ */
+} */ 
 
 .resume-section p {
   font-size: 16px;
@@ -502,7 +501,7 @@ body {
   color: #fff;
 }
 .skills-list li i:hover {
-  background-color: #9296F0;
+  color: #9296F0;
 }
 .styled-button {
   display: inline-block;
